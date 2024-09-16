@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+.NavHeader{
+    position: fixed;
+    background-color: black;
+    color: white;    
+    width: 100%;
+    font-weight: bold;
+    z-index: 10;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+li{
+    margin: 10px;
+    text-align: center;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coverImg{
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.coverPage>h1{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    from {left: 40%;}
+    to {left: 60%;}
+}
+
+.wordart {
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }  
+  .wordart.italic-outline {
+      transform: scale(1, 1.3);
+      -webkit-transform: scale(1, 1.3);
+      -moz-transform: scale(1, 1.3);
+      -o-transform: scale(1, 1.3);
+      -ms-transform: scale(1, 1.3);
+  }  
+  .wordart.italic-outline .text {
+      letter-spacing: -0.01em;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      color: #fff;
+      -webkit-text-stroke: 0.01em #000;
+      filter: progid:DXImageTransform.Microsoft.Glow(Color=#000000, Strength=1);
+      text-shadow: 0.03em 0.03em 0 #6D6D6D;
+
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(100%, -150%);
+      text-align: center;
+}
+
+.Note{
+    padding-top: 70px;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+h2,p{
+    margin: 0;
+}
+.pdfview{
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+    margin-top: 0;
+}
+@media (min-width: 767px) {
+ 
+}
